@@ -242,7 +242,7 @@
                         <span class="carousel-control-next-icon"></span> 
                     </a>
                     <button class="btn btn-danger btn-sm" id="carouselButton">
-                        <span class="fa fa-play"></span>
+                        <span class="fa fa-pause"></span>
                     </button>
                     </div>
                 </div>
@@ -351,7 +351,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#mycarousel').carousel({ interval: 1000 });
+            $('#mycarousel').carousel({ interval: 2000 });
             $('#carouselButton').click(function() {
                 if ($('#carouselButton').children('span').hasClass('fa-pause')) {
                     $('#mycarousel').carousel('pause');
